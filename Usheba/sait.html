@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Очередная хуйня</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    
+
+</head>
+<body>
+    <div id = "app">
+        <div v-for="image in images" :key="image" style="text-align: center;">
+          <img :src="image" alt="Картинка" style="width: 400px;height: 400px;">
+        </div>
+      </div>
+</body> 
+<script>
+  var app = new Vue({
+  el: '#app',
+  data: {
+    images: [
+       'https://a4files.ru/content/uploads/2017/05/YA-1200x1697.jpg' ,
+        'https://i1.sndcdn.com/artworks-rNQpIIxh9zAws0KK-ewqCxQ-t500x500.jpg' ,
+       'https://cdn.100sp.ru/pictures/168167160' 
+    ]
+  }
+})
+    </script>
+    
+</html>  
